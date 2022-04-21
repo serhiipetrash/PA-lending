@@ -22,7 +22,7 @@ html {
 
   @media only screen and (max-width: 600px) {
     background-image: url('../assets/images/mobile-hero-2.jpg');
-    height: 95vh;
+    height: 90vh;
     
   }
 }
@@ -46,9 +46,7 @@ html {
     height: 100vh;
     justify-content: space-evenly;
   }
-  .hero-text-block {
-    // height: 16rem;
-  }
+
 
   h1 {
     color: $primary-color;
@@ -126,8 +124,8 @@ html {
 
   @media screen and (max-width: 600px) { 
     font-size: 1.5rem;
-    margin: 0;
-    padding: 1rem; 
+    margin: 1rem 0;
+    // padding: 1rem; 
   }
 }
 
@@ -216,7 +214,7 @@ html {
 
   @media screen and (max-width: 600px) { 
     width: 100vw; 
-    flex-grow: 1;
+    flex-grow: 0;
     padding: 0;
     justify-content: space-evenly;
   }
