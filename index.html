@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal accounting</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero -->
+    <div id="hero" class="hero-image">
+      <div class="hero-calculator"></div>
+      <div class="hero-text">
+        <h1>персональна бухгалтерія</h1>
+        <h2>автоматизуй свої витрати</h2>
+        <button>Спробувати демо!</button>
+      </div>
+    </div>
+    <!-- end Hero -->
+
+    <!-- features -->
+    <section id="features">
+      <h2 class="title-section">Інтеграція із банками</h2>
+
+      <div class="feature-container">
+        <div class="feature-left">
+          <div class="btn-container">
+            <button id="monoBank" class="btn round-left">
+              <img src="./assets/images/mono.svg" alt="monoBank" />
+            </button>
+            <button id="privatBank" class="btn round-right">
+              <img src="./assets/images/privat.svg" alt="privatBank" />
+            </button>
+          </div>
+        </div>
+        <div class="feature-right">
+          <h2>
+            Інтеграція із найбільш популярними банками для отримання операцій по
+            ваших рахунках
+          </h2>
+          <h3>
+            *назва домену* матиме доступ лише на зчитування даних без проведення
+            транзакцій
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- end features -->
+
+    <!-- cost table  -->
+    <section>
+      <div class="cost-table-container">
+        <h2 class="title-section">Автоматизована категоризація витрат</h2>
+
+        <div class="table">
+          <table>
+            <tr>
+              <th>категорія</th>
+              <th>відсоток</th>
+              <th>сума</th>
+              <th>дата</th>
+              <th>статус</th>
+            </tr>
+
+            <tr>
+              <td>item 1</td>
+              <td>1230</td>
+              <td>$45000</td>
+              <td>21/06/2019</td>
+              <td>active</td>
+            </tr>
+            <tr>
+              <td>item 2</td>
+              <td>123</td>
+              <td>$18000</td>
+              <td>21/06/2019</td>
+              <td>active</td>
+            </tr>
+            <tr>
+              <td>item 3</td>
+              <td>12</td>
+              <td>$9000</td>
+              <td>21/06/2019</td>
+              <td>active</td>
+            </tr>
+            <tr>
+              <td>item 4</td>
+              <td>1</td>
+              <td>$300</td>
+              <td>21/06/2019</td>
+              <td>active</td>
+            </tr>
+          </table>
+        </div>
+
+        <ul>
+          <li>
+            <div class="marker">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                ></path>
+              </svg>
+            </div>
+            <p>
+              Витрати ( транзакції ) по картах спершу призначаються Вами вручну.
+            </p>
+          </li>
+          <li>
+            <div class="marker">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                ></path>
+              </svg>
+            </div>
+            <p>
+              Згодом система автоматично присвоює нові транзакції до вже
+              визначених груп.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- end cost table  -->
+
+    <!-- grafics -->
+    <section id="grafics">
+      <h2 class="title-section">Побудова звітів із інфографікою</h2>
+
+      <!-- grafics diagran -->
+      <div class="grafics-bg">
+        <div class="grafic-container">
+          <div class="grafic-1">
+            <img src="./assets/images/grafic-1.png" alt="grafic-1" />
+          </div>
+          <div class="grafic-2">
+            <img src="./assets/images/grafic-2.png" alt="grafic-2" />
+          </div>
+        </div>
+      </div>
+      <!-- end grafics diagran -->
+
+      <!-- grafics table -->
+      <div class="grafics-table-container">
+        <div class="table">
+          <table>
+            <tr>
+              <th>категорія</th>
+              <th>відсоток</th>
+              <th>сума</th>
+              <th>дата</th>
+              <th>статус</th>
+            </tr>
+            <tr>
+              <td>item 1</td>
+              <td>1230</td>
+              <td>$45000</td>
+              <td>21/06/2019</td>
+              <td>active</td>
+            </tr>
+            <tr>
+              <td>item 2</td>
+              <td>123</td>
+              <td>$18000</td>
+              <td>21/06/2019</td>
+              <td>active</td>
+            </tr>
+            <tr>
+              <td>item 3</td>
+              <td>12</td>
+              <td>$9000</td>
+              <td>21/06/2019</td>
+              <td>active</td>
+            </tr>
+            <tr>
+              <td>item 4</td>
+              <td>1</td>
+              <td>$300</td>
+              <td>21/06/2019</td>
+              <td>active</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- end grafics table -->
+    </section>
+    <!-- end gragics -->
+
+    <!-- cost analysis -->
+    <section id="analysis">
+      <h2 class="title-section">Аналіз витрат із рекомендаціями</h2>
+
+      <div class="analysis-bg">
+        <h2>
+          Система аналізує витрати користувача та пропонує відкоригувати бюджет,
+          за необхідністю.
+        </h2>
+      </div>
+    </section>
+    <!-- end cost analysis -->
+
+    <!-- footer -->
+    <footer>
+      <p>&copy; Усі права захищено</p>
+    </footer>
+
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
