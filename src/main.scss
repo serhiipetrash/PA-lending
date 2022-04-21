@@ -2,7 +2,7 @@
 
 body,
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   height: 100%;
 }
 %full-screen {
@@ -21,8 +21,8 @@ html {
   @extend %full-screen;
 
   @media only screen and (max-width: 600px) {
-    background-image: url('../assets/images/mobile-hero.webp');
-    height: 100vh;
+    background-image: url('../assets/images/mobile-hero-2.jpg');
+    height: 95vh;
     
   }
 }
@@ -46,15 +46,21 @@ html {
     height: 100vh;
     justify-content: space-evenly;
   }
+  .hero-text-block {
+    // height: 16rem;
+  }
 
   h1 {
     color: $primary-color;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px $primary-color; 
 
-    @media only screen and (max-width: 600px) { font-size: 2rem; color: $secondary-color; }  
+    @media only screen and (max-width: 600px) { 
+      font-size: 2rem; 
+      color: $primary-color; 
+      text-align: left;
+    }  
   }
 
   h2 {
@@ -63,9 +69,12 @@ html {
     font-weight: 700;
     font-size: 2.5rem;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px $primary-color; 
+    text-shadow: 2px 2px 6px $primary-color; 
 
-    @media only screen and (max-width: 600px) { font-size: 1.5rem; }
+    @media only screen and (max-width: 600px) { 
+      font-size: 1.5rem;
+      text-align: right; 
+    }
   }
 
   button {
@@ -83,16 +92,25 @@ html {
 
     @media only screen and (max-width: 600px) { 
       font-size: 1rem; 
-      padding: 1rem;
+      padding: 1rem 3rem;
       margin: 0;
-      box-shadow: none;
+      background-color: $accent-mobile;
+      box-shadow: 0px 20px 30px $accent-mobile;
+
     } 
 
     &:hover {
       background-color: transparent;
       border: 2px solid $accent-color;
       color: $accent-color;
-      box-shadow: none; 
+      box-shadow: none;
+      
+      @media screen and (max-width: 600px) {
+        background-color: transparent;
+        border: 2px solid $accent-mobile;
+        color: $accent-mobile;
+        box-shadow: none;
+      }
     }  
   }
 }
