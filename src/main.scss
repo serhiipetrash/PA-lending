@@ -58,6 +58,7 @@ html {
       font-size: 2rem; 
       color: $primary-color; 
       text-align: left;
+      font-weight: 600;
     }  
   }
 
@@ -93,7 +94,7 @@ html {
       padding: 1rem 3rem;
       margin: 0;
       background-color: $accent-mobile;
-      box-shadow: 0px 20px 30px $accent-mobile;
+      box-shadow: 0px 10px 30px $accent-mobile;
 
     } 
 
