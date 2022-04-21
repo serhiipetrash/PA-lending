@@ -116,12 +116,13 @@ html {
 // feature
 
 .feature-container {
-  width: 90%;
+  width: 100vw;
   display: flex;
   margin: 0 auto;
   height: 500px;
 
   @media screen and (max-width: 600px) { 
+    height: 100vh;
     flex-direction: column;
     margin: 0; 
   }
@@ -136,6 +137,8 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  .title-section { color: $secondary-color; }
 
   @media screen and (max-width: 600px) { 
     width: 100vw; 
