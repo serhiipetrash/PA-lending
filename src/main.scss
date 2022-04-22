@@ -4,6 +4,7 @@ body,
 html {
   font-family: 'Inter', sans-serif;
   height: 100%;
+  overflow-x: hidden;
 }
 %full-screen {
   height: 100vh;
@@ -367,7 +368,7 @@ html {
   .grafic-container {
     
     img {
-      max-width: 90%;
+      max-width: 70%;
     }
   }
 }
@@ -386,6 +387,7 @@ html {
 
   .title-section {
     padding: 0;
+    margin-bottom: 0.5rem;
 
     @media screen and (max-width: 600px) {
       margin: 1rem;
@@ -395,10 +397,10 @@ html {
   }
 
   h3 {
-    // max-width: 40rem;
+    max-width: 45%;
     font-size: 2rem;
-    line-height: 4rem;
-    padding: 0 4rem;
+    line-height: 3rem;
+    padding: 0 2rem;
     color: $primary-color;
 
     @media screen and (max-width: 600px) {
@@ -419,7 +421,3 @@ footer {
 
   @media screen and (max-width: 600px) { height: 3rem;}
 }
-
-//test
-
-// .cover {object-fit: contain;}
