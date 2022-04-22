@@ -136,11 +136,11 @@ html {
   width: 100vw;
   display: flex;
   margin: 0 auto;
-  height: 500px;
+  height: 600px;
 
   @media screen and (max-width: 600px) { 
-    height: 100vh;
-    flex-direction: column;
+    height: 160px;
+    // flex-direction: column;
     margin: 0; 
   }
 }
@@ -154,12 +154,16 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-left-radius: 25%;
+  border-bottom-left-radius: 25%;
+  margin-left: 2rem;
 
   .title-section { color: $secondary-color; }
 
   @media screen and (max-width: 600px) { 
     width: 100vw; 
     flex-grow: 1;
+    margin-left: 0.5rem;
   }
   
   .btn-container {
@@ -179,9 +183,12 @@ html {
       cursor: pointer;
       transition: all ease 200ms;
 
+      
+
       @media screen and (max-width: 600px) {
-        width: 12rem;
-        height: 3rem;
+        width: 8.5rem;
+        height: 2.5rem;
+
       }
 
       &:hover {
@@ -191,15 +198,28 @@ html {
     }
     .round-left {
       border-top-left-radius: 1rem;
-      border-bottom-left-radius: 1rem; 
+      border-bottom-left-radius: 1rem;
+      background-image: url(../assets/images/mono3.svg);
+      background-repeat: no-repeat;
+      background-position: center;
 
-      @media screen and (max-width: 600px) {border-radius: 1rem;}
+      @media screen and (max-width: 600px) {
+        border-radius: 1rem;
+        background-size: cover;
+      }
     }
     .round-right {
       border-top-right-radius: 1rem;
       border-bottom-right-radius: 1rem;
+      background-image: url(../assets/images/privat3.svg);
+      background-repeat: no-repeat;
+      background-position: center;
 
-      @media screen and (max-width: 600px) {border-radius: 1rem;}
+      @media screen and (max-width: 600px) {
+        border-radius: 0;
+        background-size: contain;
+        border-radius: 1rem;
+      }
     }
   }
 }
@@ -212,12 +232,16 @@ html {
   padding: 1rem;
   color: $secondary-color;
   text-align: center;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  margin-right: 2rem;
 
   @media screen and (max-width: 600px) { 
     width: 100vw; 
     flex-grow: 0;
     padding: 0;
     justify-content: space-evenly;
+    margin-right: 0.5rem;
   }
 
   h2 {
@@ -229,10 +253,20 @@ html {
   }
 
   @media screen and (max-width: 600px) { 
-    h2 {font-size: 1.5rem; }
+    h2 { 
+      font-size: 10px;
+      line-height: 12px; 
+      text-align: left; 
+      padding-left: 1rem;
+      padding-right: 0.5rem;
+    }
   }
   @media screen and (max-width: 600px) { 
-    h3 {font-size: 1rem;  line-height: 1.5rem;}
+    h3 {
+      font-size: 7px;  
+      line-height: 10px;
+      padding: 0.5rem;
+    }
   }
 }
 
@@ -385,3 +419,7 @@ footer {
 
   @media screen and (max-width: 600px) { height: 3rem;}
 }
+
+//test
+
+// .cover {object-fit: contain;}
